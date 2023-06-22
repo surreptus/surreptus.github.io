@@ -3,7 +3,7 @@ layout: post
 title: "Katy Trail"
 description: "Riding the scenic converted railroad along the boomtowns of Missouri"
 date: 2023-05-15
-feature_image: images/katy/2.jpg 
+feature_image: images/katy/2.webp
 tags: [biking, travel]
 ---
 
