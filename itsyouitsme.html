@@ -1,0 +1,339 @@
+<html>
+    <head>
+        <title>Its You Its Me</title>
+            <style>
+                body {
+                    color: white;
+                    background-color: hotpink;
+                    font-family:'Courier New', Courier, monospace
+                }
+
+                .hero {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80vh;
+                }
+
+                .hero__title {
+                    color: white;
+                    font-size: 128px;
+                    font-style: italic;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-weight: 900;
+                    transform: translate(-50%, -50%);
+                    text-shadow: 6px 0px 0 red, -6px 0px 0 cyan;
+                }
+
+
+                .hero__background {
+                    text-wrap: wrap;
+                    color: rgba(255, 255, 255, 0.16);
+                    font-size:64px;
+                    font-style: italic;
+                    overflow: hidden;
+                }
+                .hero__background h3 {
+                    text-wrap: nowrap;
+                    animation: scroll 20s linear infinite;
+                    margin: 0
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 40rem;
+                    width: 100%;
+                    margin:0 auto;
+                    padding: 4rem 1rem;
+                }
+
+                .content__section {
+                    border: 3px double white;
+                    padding: 2rem;
+                }
+
+                table, td, tr {
+                    border: 1px solid white;
+                    border-style: double;
+                }
+
+                hr {
+                    margin: 2rem 0;
+                    border: 1px solid white;
+                    border-style: double;
+                }
+
+                td {
+                    padding: 1rem;
+                }
+
+                a {
+                    color: white;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+
+                .content__section table {
+                    width: 100%;
+                }
+
+                .content__title {
+                    text-align: center;
+                }
+
+                .content__title__highlight {
+                    text-emphasis: filled double-circle cyan;
+                }
+
+                .cta {
+                    margin-top: 4rem;
+                    width: 100%;
+                    max-width: 40rem;
+                    padding: 2rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    border: 1px solid white;
+                    border-style: double;
+                    background:
+                        conic-gradient(hotpink 25%,#0000 0) 0 0/calc(2*32px) calc(32px/9.5),
+                        conic-gradient(hotpink 25%,#0000 0) 0 0/calc(32px/9.5) calc(2*32px),
+                        repeating-conic-gradient(#0000 0 25%,hotpink 0 50%) 
+                        32px 0 /calc(2*32px) calc(2*32px),
+                        radial-gradient(50% 50%,hsl(330, 100%, 40%) 98%,hotpink) 
+                        0 0/32px 32px;
+                }
+
+                .cta__title {
+                    text-align: center;
+                }
+
+                .cta__button {
+                    background-color: white;
+                    color: hotpink;
+                    border: 3px solid hotpink;
+                    padding: 1rem 2rem;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                }
+
+                footer {
+                    text-align: center;
+                    padding: 0 2rem;
+                    margin-bottom: 4rem;
+                }
+
+                footer a {
+                    color: cyan
+                }
+
+                @keyframes scroll{
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+
+
+            </style>
+    </head>
+<body>
+    <div class="hero">
+        <div class="hero__background">
+            <h3 style="animation-delay: 0s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+            <h3 style="animation-delay: -1s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+            <h3 style="animation-delay: -2s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+            <h3 style="animation-delay: -3s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+
+            <h3 style="animation-delay: -4s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+            <h3 style="animation-delay: -5s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+
+            <h3 style="animation-delay: -6s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+            <h3 style="animation-delay: -7s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+            <h3 style="animation-delay: -8s">
+                It's you! It's me! And there's wedding! It's you! It's me! And there's wedding! 
+            </h3>
+
+        </div>
+
+        <h1 class="hero__title">
+            2025.09.27
+            2025.09.28
+        </h1>
+    </div>
+
+    <main class="content">
+        <div class="content__item">
+            <h2 class="content__title">
+We are getting married! Your presence would mean a lot to us.
+
+                <br>
+                <br>
+If you are not able to attend, you will be missed. We understand that not everyone can make it out on such short notice, and
+we will hold a reception in Canada later this year. We will send the details closer to the date.
+                <br>
+                <br>
+                Please join us and RSVP by <span class="content__title__highlight">2025.09.01!</span>
+            </h2>
+
+            <div class="content__section">
+                <h3>
+                    Itinerary (Please check for updates)
+                </h3>
+                <h4>
+                    <b>Saturday</b>: 2025.09.27
+                </h4>
+
+                <table>
+                    <tr>
+                        <td>
+                            Event
+                        </td>
+                        <td>
+                    Mixer (Optional)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Time
+                        </td>
+                        <td>
+                            Afternoon till evening
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Location
+                        </td>
+                        <td>
+                            TBD
+                        </td>
+                    </tr>
+                </table>
+
+                <hr/>
+
+                <h4>
+                    <b>Sunday</b>: 2025.09.28
+                </h4>
+
+                <table>
+                    <tr>
+                        <td>
+                            Event
+                        </td>
+                        <td>
+                            Ceremony & Cocktail Hour
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Time
+                        </td>
+                        <td>
+                            1500 - 1700
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Location
+                        </td>
+                        <td>
+                            <a href="https://maps.app.goo.gl/EFKfYtyvBrdcdd9f9" target="_blank">
+                                National Aids Memorial Grove
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    15 minute walk from the ceremony to the reception.
+                </p>
+
+    <table>
+                    <tr>
+                        <td>
+                            Event
+                        </td>
+                        <td>
+                            Reception
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Time
+                        </td>
+                        <td>
+                            1730 - 2130
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Location
+                        </td>
+                        <td>
+                            <a href="https://maps.app.goo.gl/r2mh77vRG5xKfGfa6" target="_blank">
+                                Fiorella Inner Sunset
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2 class="cta__title">
+                RSVP
+            </h2>
+
+            <h4>
+                Please RSVP by 2025.09.01!
+            </h4>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbybsxWyFgL4PAFplG677h7eunp-xZyBkc-0Todh5GBenHxA/viewform" target="_blank">
+                <button class="cta__button">
+                    RSVP
+                </button>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Made with ❤️ by <a href="https://youtu.be/dJRsWJqDjFE?si=-B_LAi6dZ79-BZ7m&t=65" target="_blank">Shamelia</a>
+        </p>
+    </footer>
+</body>
+</html>
